@@ -1,0 +1,23 @@
+Map from mobilization: 
+Col index: 4 -> 1, 2, 3
+wellName -> {mobilize, demobilize, company}
+
+create/open big_csv
+
+for each file:
+	for each col from col index 2-11:
+		if col index: 2-9:
+			avg col values, 
+			add avg to big_csv
+			(Porosity, ……, pump rate)
+		Else: (col index 10-11)
+			Sum col values:
+			Add sum to  big_csv
+			(Time pump, set time) 
+		If my col is 11:
+			Multiply col 8 and 9 and sum it up
+		   //((df['factor'] * df['value']).sum()) 
+		   Add this sum to big_csv
+	Get the mobility values from the map and add 0-1 of the values to big_csv
+
+Close big_csv

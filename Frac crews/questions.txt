@@ -1,0 +1,5 @@
+Basically, our combined dataset will not have: easting, northing, set time, date, company
+And in addition to the raw data, it will have one more col: fluid pumped (product’s sum)
+
+Do we want to sum or have set time at all in our combined data set?
+What should be summed (per well)? – currently time to push, and fluid pumped (product’s sum). everything else is avg…is that what we want?
